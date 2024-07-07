@@ -1,0 +1,28 @@
+
+README: (10/10)
+  - Was able to test the code as described in this file.
+
+Paper: (90/100)
+  * Introduction: 20/20
+    - Good overview of CNNs.
+    - Nice that you mentioned the computational resources needed to run these deep learning models.
+    - You highlight that your network will *not* be using a fully connect to help reduce computational cost.
+    
+  * Methods: 24/30
+    - Good description of the data.
+    - One interesting aspect of this data is that all scaling information is removed so that every fruit can fill the 100x100 image as much as possible. Thus a raspberry or blueberry end up being the same size as an apple. 
+    - Nice to include Figure 1 showing both the original and augmented data.
+    - Helpful to include a diagram of the network architecture in Figure 2, however the architecture of the network in the Notebook did not match that described here. The implemented network has a Dense hidden of size 80, which led to a total number of parameters close to 300K vs the 90K described in the paper.
+    - Based on the training plots, 5 epochs would have likely been sufficient (rather than the 10 that you used).
+  * Results: 28/30
+    - Good that you summarized the testing results illustrated in the confusion matrices. 
+    - Include the plots (like those in Figure 3) for the training done with the augmented data.
+    - Good that you acknowledged that even the augmented images are still much simpler that real-world images would be. 
+    
+  * Conclusions: 8/10
+    - Again you highlight the use of a CNN without a Dense hidden layer, but your implementation does include one. 
+
+  * Acknowledgements & References: 10/10
+
+
+TOTAL: (100/110)
